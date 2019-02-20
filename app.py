@@ -23,9 +23,7 @@ api.add_resource(StoreList, '/stores')
 api.add_resource(UserRegister, '/register')
 
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
+
 
 
 
